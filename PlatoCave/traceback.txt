@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 278, in script
-    python:
-ScriptError: could not find label 'start'.
+  File "game/script.rpy", line 54, in script
+    show soul at middle
+  File "game/script.rpy", line 54, in <module>
+    show soul at middle
+NameError: name 'middle' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 660, in main
-    run(restart)
-  File "renpy/main.py", line 146, in run
-    renpy.execution.run_context(True)
-  File "renpy/execution.py", line 938, in run_context
-    context.run()
-  File "renpy/common/00start.rpy", line 278, in script
-    python:
-  File "renpy/script.py", line 927, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'start'.
+  File "game/script.rpy", line 54, in script
+    show soul at middle
+  File "renpy/ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "renpy/ast.py", line 1367, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "renpy/python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 54, in <module>
+    show soul at middle
+NameError: name 'middle' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 7.5.3.22090809
-PlatoCave 1.0
-Mon Jan 23 17:20:35 2023
+Plato's Cave 1.0
+Mon Apr 10 18:26:49 2023

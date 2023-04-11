@@ -2,13 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 35: expected ':' not found.
-    label scene_Two
-                   ^
+File "game/script.rpy", line 62: end of line expected.
+    show soul at left easeoutleft
+                      ^
 
-File "game/script.rpy", line 38: expected ':' not found.
-    label scene_Four
-                    ^
+File "game/script.rpy", line 65: expected 'simple_expression' not found.
+    hide soul with
+                  ^
+
+File "game/script.rpy", line 74: end of line expected.
+    show soul with MediumDissolve at left
+                                  ^
+
+File "game/script.rpy", line 81: end of line expected.
+    show платон with MediumDissolve at right
+                                    ^
+
+File "game/script.rpy", line 91: end of line expected.
+    show soul with MediumDissolve at left
+                                  ^
 
 Ren'Py Version: Ren'Py 7.5.3.22090809
-Tue Apr  4 10:20:27 2023
+Tue Apr 11 10:17:19 2023
